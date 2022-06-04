@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "737881985527",
+    "project_id": "mynotes-flutter-wile44",
+    "storage_bucket": "mynotes-flutter-wile44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737881985527:android:c9a521b807deb336d9def2",
+        "android_client_info": {
+          "package_name": "com.goodluckwile.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737881985527-bl346lgaodqen6gh3t3d6r62b17dioks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmoSAF8B4gHqrwLDQgxr8JOLecU-ujnX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737881985527-bl346lgaodqen6gh3t3d6r62b17dioks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
