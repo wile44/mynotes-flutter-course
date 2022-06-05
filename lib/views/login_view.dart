@@ -34,7 +34,7 @@ class _LoginViewState extends State<LoginView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: const Text('Login'),
       ),
       body: FutureBuilder(
           future: Firebase.initializeApp(
@@ -63,14 +63,21 @@ class _LoginViewState extends State<LoginView> {
                         final email = _email.text;
                         final password = _password.text;
 
-                        final userCredential = await FirebaseAuth.instance
-                            .createUserWithEmailAndPassword(
+                        try {
+                          final userCredential = await FirebaseAuth.instance
+                            .signInWithEmailAndPassword(
                           email: email,
                           password: password,
                         );
                         print("This is user's $userCredential");
+                        } catch (e) {
+                          print("Something went wrong");
+                          print(e.runtimeType);
+                          print(e);
+                        }
+                        
                       },
-                      child: Text('Register'),
+                      child: const Text('Login'),
                     ),
                   ],
                 );
@@ -81,3 +88,5 @@ class _LoginViewState extends State<LoginView> {
     );
   }
 }
+
+
